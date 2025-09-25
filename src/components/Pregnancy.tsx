@@ -167,8 +167,8 @@ const Pregnancy: React.FC = () => {
                   </div>
                   
                   {/* Content */}
-                  <div className={`ml-16 md:ml-0 ${
-                    index % 2 === 0 ? 'md:mr-8 md:text-right' : 'md:ml-8 md:text-left'
+                  <div className={`ml-16 lg:ml-0 ${
+                    index % 2 === 0 ? 'lg:mr-8 lg:text-right' : 'lg:ml-8 lg:text-left'
                   } flex-1`}>
                     <button
                       onClick={() => openModal(week)}
