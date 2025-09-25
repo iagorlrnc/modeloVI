@@ -303,7 +303,7 @@ const Pregnancy: React.FC = () => {
         
         <div className="mt-12 pt-8 border-t border-rosa-marfil-2">
           <p className="text-xs text-gray-500 italic text-center">
-            <a href="https://bvsms.saude.gov.br/bvs/publicacoes/cadernos_atencao_basica_32_prenatal.pdf" target="_blank">Fonte: Ministério da Saúde. Atenção ao Pré-natal de Baixo Risco. Cadernos de Atenção Básica, nº 32. Brasília: DF, 2012.</a>
+            <a href="https://bvsms.saude.gov.br/bvs/publicacoes/cadernos_atencao_basica_32_prenatal.pdf" target="_blank">Fonte: Ministério da Saúde. Atenção ao Pré-natal de Baixo Risco. Cadernos de Atenção Básica, nº 32. Brasília: MS, 2012.</a>
           </p>
         </div>
       </div>
