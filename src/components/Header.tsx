@@ -13,7 +13,7 @@ const Header: React.FC = () => {
     { id: 'contraceptivos', label: 'Métodos Contraceptivos' },
     { id: 'gestacao', label: 'Gestação' },
     { id: 'recomendacoes', label: 'Recomendações' },
-    { id: 'recursos', label: 'Recursos' },
+    // { id: 'recursos', label: 'Recursos' },
     { id: 'contato', label: 'Contato' }
   ];
 
