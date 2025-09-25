@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'E-mail',
-      info: 'lais.dias@mail.uft.edu.br',
+      info: 'lais.dias@uft.edu.br',
     }
   ];
 
@@ -49,8 +49,8 @@ const Contact: React.FC = () => {
             <div className="bg-white p-6 rounded-xl border border-rosa-marfil-2">
               <h4 className="font-semibold text-text mb-3">Sobre este Projeto</h4>
               <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                Este trabalho de conclusão de curso elaborado pela aluna Laís Pereira Dias 
-                e desenvolvido como parte da graduação em Enfermagem da UFT.
+                Este trabalho de conclusão de curso foi elaborado pela aluna Laís Pereira Dias 
+                e desenvolvido como parte da graduação Bacharelado em Enfermagem da UFT.
               </p>
               <p className="text-gray-600 text-sm leading-relaxed">
                 O objetivo é contribuir para a melhoria dos cuidados de enfermagem direcionados 
