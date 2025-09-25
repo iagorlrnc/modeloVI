@@ -30,7 +30,7 @@ const About: React.FC = () => {
               </p>
               <div className="mt-4 pt-4 border-t border-rosa-marfil-2">
                 <p className="text-xs text-gray-500 italic">
-                  <a href="https://bvsms.saude.gov.br/bvs/publicacoes/manual_educacao_saude_v2.pdf" target="_blank">Fonte: Ministério da Saúde. Manual de Educação em Saúde: Linha de Cuidado em Doença Falciforme. Brasília: DF, 2009.</a>
+                  <a href="https://bvsms.saude.gov.br/bvs/publicacoes/manual_educacao_saude_v2.pdf" target="_blank">Fonte: Ministério da Saúde. Manual de Educação em Saúde: Linha de Cuidado em Doença Falciforme. Brasília: MS, 2009.</a>
                 </p>
               </div>
             </div>
