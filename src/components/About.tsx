@@ -11,7 +11,7 @@ const About: React.FC = () => {
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Uma pesquisa dedicada ao desenvolvimento de práticas de cuidado e orientações 
-            reprodutivas especializadas para pessoas com anemia falciforme.
+            reprodutivas especializadas para mulheres com anemia falciforme.
           </p>
         </div>
 
@@ -25,12 +25,12 @@ const About: React.FC = () => {
               </div>
               <p className="text-gray-700 leading-relaxed">
                 A presente pesquisa visa analisar práticas de cuidado e orientações reprodutivas 
-                voltadas a pessoas com anemia falciforme, propondo materiais educativos para 
+                voltadas a mulheres com anemia falciforme, propondo materiais educativos para 
                 profissionais de enfermagem e pacientes.
               </p>
               <div className="mt-4 pt-4 border-t border-rosa-marfil-2">
                 <p className="text-xs text-gray-500 italic">
-                  Fonte: Ministério da Saúde. Manual de Educação em Saúde: Linha de Cuidado em Doença Falciforme. Brasília: MS, 2015.
+                  <a href="https://bvsms.saude.gov.br/bvs/publicacoes/manual_educacao_saude_v2.pdf" target="_blank">Fonte: Ministério da Saúde. Manual de Educação em Saúde: Linha de Cuidado em Doença Falciforme. Brasília: DF, 2009.</a>
                 </p>
               </div>
             </div>
