@@ -7,7 +7,7 @@ import ReproductivePlanning from './components/ReproductivePlanning';
 import ContraceptiveMethods from './components/ContraceptiveMethods';
 import Pregnancy from './components/Pregnancy';
 import Recommendations from './components/Recommendations';
-import Resources from './components/Resources';
+// import Resources from './components/Resources';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
