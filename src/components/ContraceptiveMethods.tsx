@@ -347,7 +347,7 @@ const ContraceptiveMethods: React.FC = () => {
         
         <div className="mt-12 pt-8 border-t border-rosa-marfil-2">
           <p className="text-xs text-gray-500 italic text-center">
-            Fonte: Organização Mundial da Saúde. Critérios Médicos de Elegibilidade para Uso de Anticoncepcionais. 5ª ed. Genebra: OMS, 2015.
+            <a href="https://www.saudedireta.com.br/docsupload/1340375131Portuguese-AppendixD.pdf" target="_blank">Fonte: Organização Mundial da Saúde. Critérios Médicos de Elegibilidade para Uso de Anticoncepcionais. 5ª ed. Genebra: OMS, 2015.</a>
           </p>
         </div>
       </div>
