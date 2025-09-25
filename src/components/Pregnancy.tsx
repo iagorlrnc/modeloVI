@@ -147,7 +147,8 @@ const Pregnancy: React.FC = () => {
           
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-accent to-accent/30"></div>
+            {/* <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-accent to-accent/30"></div> */}
+            <div className="absolute left-4 lg:left-1/2 transform lg:-translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-accent to-accent/30"></div>
             
             <div className="space-y-8">
               {pregnancyTimeline.map((week, index) => (
@@ -158,7 +159,10 @@ const Pregnancy: React.FC = () => {
                   }`}
                 >
                   {/* Timeline dot */}
-                  <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-accent rounded-full border-4 border-white shadow-lg flex items-center justify-center z-10">
+                  {/* <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-accent rounded-full border-4 border-white shadow-lg flex items-center justify-center z-10">
+                    <span className="text-white text-xs font-bold">{week.week}</span>
+                  </div> */}
+                  <div className="absolute left-4 lg:left-1/2 transform lg:-translate-x-1/2 w-8 h-8 bg-accent rounded-full border-4 border-white shadow-lg flex items-center justify-center z-10">
                     <span className="text-white text-xs font-bold">{week.week}</span>
                   </div>
                   
