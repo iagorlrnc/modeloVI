@@ -249,7 +249,7 @@ const ReproductivePlanning: React.FC = () => {
         
         <div className="mt-12 pt-8 border-t border-rosa-marfil-2">
           <p className="text-xs text-gray-500 italic text-center">
-            Fonte: Federação Brasileira das Associações de Hematologia, Hemoterapia e Terapia Celular. Manual de Orientações para Planejamento Reprodutivo em Doenças Falciformes. Rio de Janeiro: ABHH, 2019.
+            <a href="https://bvsms.saude.gov.br/bvs/publicacoes/doenca_falciforme_atencao_integral_saude_mulher.pdf" target="_blank">Fonte: Ministério da Saúde. Atenção Integral à Saúde das Mulheres. Brasília: MS, 2015.</a>
           </p>
         </div>
       </div>
