@@ -173,7 +173,7 @@ const ContraceptiveMethods: React.FC = () => {
         </div>
 
         {/* Filters */}
-        <div className="mb-8">
+        {/* <div className="mb-8">
           <div className="flex flex-wrap items-center gap-3 mb-4">
             <div className="flex items-center space-x-2">
               <Filter className="w-5 h-5 text-accent" />
@@ -196,6 +196,42 @@ const ContraceptiveMethods: React.FC = () => {
               <button
                 onClick={clearFilters}
                 className="px-3 py-2 text-gray-600 hover:text-accent transition-colors duration-200"
+              >
+                <RotateCcw className="w-4 h-4" />
+              </button>
+            )}
+          </div>
+        </div> */}
+        <div className="mb-8">
+          <div className="flex flex-wrap items-center gap-3 mb-4">
+            {/* Rótulo permanece igual */}
+            <div className="flex items-center space-x-2">
+              <Filter className="w-5 h-5 text-accent" />
+              <span className="font-medium text-text">Filtros:</span>
+            </div>
+            
+            {/* MUDANÇA: Envolva os botões em uma div com Grid para controle de quebras */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-3 flex-1">
+              {filterOptions.map((filter) => (
+                <button
+                  key={filter.id}
+                  onClick={() => toggleFilter(filter.id)}
+                  className={`px-4 py-2 rounded-lg border transition-all duration-200 ${
+                    activeFilters.includes(filter.id)
+                      ? 'bg-accent text-white border-accent'
+                      : 'bg-white text-gray-700 border-gray-300 hover:border-accent hover:text-accent'
+                  }`}
+                >
+                  {filter.label}
+                </button>
+              ))}
+            </div>
+            
+            {/* Botão de limpar permanece igual, mas agora fora do Grid para ficar à direita */}
+            {activeFilters.length > 0 && (
+              <button
+                onClick={clearFilters}
+                className="px-3 py-2 text-gray-600 hover:text-accent transition-colors duration-200 ml-auto" // MUDANÇA: ml-auto para empurrar à direita
               >
                 <RotateCcw className="w-4 h-4" />
               </button>
