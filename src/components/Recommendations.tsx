@@ -242,7 +242,7 @@ const Recommendations: React.FC = () => {
         
         <div className="pt-8 border-t border-rosa-marfil-2">
           <p className="text-xs text-gray-500 italic text-center">
-            Fonte: American College of Obstetricians and Gynecologists. Management of Sickle Cell Disease in Pregnancy. Practice Bulletin No. 78. Washington: ACOG, 2017.
+            <a href="https://pubmed.ncbi.nlm.nih.gov/17197616/" target="_blank">Fonte: American College of Obstetricians and Gynecologists. Management of Sickle Cell Disease in Pregnancy. Practice Bulletin No. 78. Washington: ACOG, 2017.</a>
           </p>
         </div>
       </div>
