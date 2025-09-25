@@ -201,18 +201,6 @@ const ContraceptiveMethods: React.FC = () => {
               </button>
             )}
           </div>
-        </div> 
-
-            {/* Botão de limpar permanece igual, mas agora fora do Grid para ficar à direita */}
-            {activeFilters.length > 0 && (
-              <button
-                onClick={clearFilters}
-                className="px-3 py-2 text-gray-600 hover:text-accent transition-colors duration-200 ml-auto" // MUDANÇA: ml-auto para empurrar à direita
-              >
-                <RotateCcw className="w-4 h-4" />
-              </button>
-            )}
-          </div>
         </div>
 
         {/* Methods Grid */}
