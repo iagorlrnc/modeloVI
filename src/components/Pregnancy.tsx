@@ -147,7 +147,6 @@ const Pregnancy: React.FC = () => {
           
           <div className="relative">
             {/* Timeline line */}
-            {/* <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-accent to-accent/30"></div> */}
             <div className="absolute left-4 lg:left-1/2 transform lg:-translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-accent to-accent/30"></div>
             
             <div className="space-y-8">
@@ -159,9 +158,6 @@ const Pregnancy: React.FC = () => {
                   }`}
                 >
                   {/* Timeline dot */}
-                  {/* <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-accent rounded-full border-4 border-white shadow-lg flex items-center justify-center z-10">
-                    <span className="text-white text-xs font-bold">{week.week}</span>
-                  </div> */}
                   <div className="absolute left-4 lg:left-1/2 transform lg:-translate-x-1/2 w-8 h-8 bg-accent rounded-full border-4 border-white shadow-lg flex items-center justify-center z-10">
                     <span className="text-white text-xs font-bold">{week.week}</span>
                   </div>
@@ -218,7 +214,7 @@ const Pregnancy: React.FC = () => {
             <h3 className="text-2xl font-bold text-blue-900">Recomendações Essenciais</h3>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid lg:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-xl">
               <h4 className="font-semibold text-blue-900 mb-3">Acompanhamento</h4>
               <ul className="text-sm text-gray-700 space-y-2">
@@ -307,7 +303,7 @@ const Pregnancy: React.FC = () => {
         
         <div className="mt-12 pt-8 border-t border-rosa-marfil-2">
           <p className="text-xs text-gray-500 italic text-center">
-            Fonte: Ministério da Saúde. Atenção ao Pré-natal de Baixo Risco. Cadernos de Atenção Básica, nº 32. Brasília: MS, 2012.
+            <a href="https://bvsms.saude.gov.br/bvs/publicacoes/cadernos_atencao_basica_32_prenatal.pdf" target="_blank">Fonte: Ministério da Saúde. Atenção ao Pré-natal de Baixo Risco. Cadernos de Atenção Básica, nº 32. Brasília: DF, 2012.</a>
           </p>
         </div>
       </div>
