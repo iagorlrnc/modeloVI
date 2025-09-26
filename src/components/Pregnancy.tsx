@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Calendar, Heart, AlertTriangle, Baby, Stethoscope, X } from 'lucide-react';
 
 interface PregnancyWeek {
@@ -12,8 +12,6 @@ interface PregnancyWeek {
 
 const Pregnancy: React.FC = () => {
   const [selectedWeek, setSelectedWeek] = useState<PregnancyWeek | null>(null);
-  const [showModal, setShowModal] = useState(false);
-  const modalRef = useRef<HTMLDivElement>(null);
 
   const pregnancyTimeline: PregnancyWeek[] = [
     {
@@ -92,49 +90,11 @@ const Pregnancy: React.FC = () => {
 
   const openModal = (week: PregnancyWeek) => {
     setSelectedWeek(week);
-    setShowModal(true);
-    document.body.style.overflow = 'hidden'; // Impede scroll da página principal
   };
 
   const closeModal = () => {
-    setShowModal(false);
     setSelectedWeek(null);
-    document.body.style.overflow = 'unset'; // Restaura scroll da página
   };
-
-  // Fechar modal ao clicar fora (backdrop)
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
-        closeModal();
-      }
-    };
-
-    if (showModal) {
-      document.addEventListener('mousedown', handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [showModal]);
-
-  // Fechar modal com ESC
-  useEffect(() => {
-    const handleEscKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape' && showModal) {
-        closeModal();
-      }
-    };
-
-    if (showModal) {
-      document.addEventListener('keydown', handleEscKey);
-    }
-
-    return () => {
-      document.removeEventListener('keydown', handleEscKey);
-    };
-  }, [showModal]);
 
   const riskFactors = [
     {
@@ -221,6 +181,69 @@ const Pregnancy: React.FC = () => {
                 </div>
               ))}
             </div>
+
+            {/* Detail Panel - Positioned like the last item (Termo - Parto) */}
+            {selectedWeek && (
+              <div className="relative flex items-center lg:flex-row-reverse mt-8">
+                {/* Timeline dot for consistency */}
+                <div className="absolute left-4 lg:left-1/2 transform lg:-translate-x-1/2 w-8 h-8 bg-accent/20 rounded-full border-4 border-white shadow-lg flex items-center justify-center z-10">
+                  <span className="text-accent text-xs font-bold">{selectedWeek.week}</span>
+                </div>
+                
+                {/* Content - Same layout as last item */}
+                <div className="ml-16 lg:ml-0 lg:ml-8 lg:text-left flex-1">
+                  <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 max-w-4xl">
+                    <div className="flex items-center justify-between mb-6">
+                      <h3 className="text-2xl font-bold text-text">{selectedWeek.title}</h3>
+                      <button
+                        onClick={closeModal}
+                        className="p-2 hover:bg-gray-100 rounded-lg transition-colors duration-200"
+                      >
+                        <X className="w-6 h-6 text-gray-500" />
+                      </button>
+                    </div>
+                    
+                    <div className="space-y-6">
+                      <div>
+                        <h4 className="font-semibold text-accent mb-3">Pontos Principais:</h4>
+                        <ul className="space-y-2">
+                          {selectedWeek.keyPoints.map((point, index) => (
+                            <li key={index} className="flex items-start space-x-2">
+                              <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></span>
+                              <span className="text-gray-700 text-sm">{point}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <h4 className="font-semibold text-orange-600 mb-3">Riscos a Monitorar:</h4>
+                        <ul className="space-y-2">
+                          {selectedWeek.risks.map((risk, index) => (
+                            <li key={index} className="flex items-start space-x-2">
+                              <AlertTriangle className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" />
+                              <span className="text-gray-700 text-sm">{risk}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <h4 className="font-semibold text-blue-600 mb-3">Monitorização:</h4>
+                        <ul className="space-y-2">
+                          {selectedWeek.monitoring.map((item, index) => (
+                            <li key={index} className="flex items-start space-x-2">
+                              <Stethoscope className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
+                              <span className="text-gray-700 text-sm">{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
 
@@ -280,75 +303,6 @@ const Pregnancy: React.FC = () => {
             </div>
           </div>
         </div>
-
-        {/* Modal Overlay - Aparece por cima da tela */}
-        {showModal && selectedWeek && (
-          <>
-            {/* Backdrop */}
-            <div 
-              className="fixed inset-0 bg-black bg-opacity-50 z-40"
-              onClick={closeModal}
-            />
-            
-            {/* Modal Content - Posicionado no centro da viewport */}
-            <div 
-              ref={modalRef}
-              className="fixed inset-0 flex items-center justify-center z-50 p-4"
-            >
-              <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
-                <div className="p-8">
-                  <div className="flex items-center justify-between mb-6">
-                    <h3 className="text-2xl font-bold text-text">{selectedWeek.title}</h3>
-                    <button
-                      onClick={closeModal}
-                      className="p-2 hover:bg-gray-100 rounded-lg transition-colors duration-200"
-                    >
-                      <X className="w-6 h-6 text-gray-500" />
-                    </button>
-                  </div>
-                  
-                  <div className="space-y-6">
-                    <div>
-                      <h4 className="font-semibold text-accent mb-3">Pontos Principais:</h4>
-                      <ul className="space-y-2">
-                        {selectedWeek.keyPoints.map((point, index) => (
-                          <li key={index} className="flex items-start space-x-2">
-                            <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></span>
-                            <span className="text-gray-700 text-sm">{point}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    
-                    <div>
-                      <h4 className="font-semibold text-orange-600 mb-3">Riscos a Monitorar:</h4>
-                      <ul className="space-y-2">
-                        {selectedWeek.risks.map((risk, index) => (
-                          <li key={index} className="flex items-start space-x-2">
-                            <AlertTriangle className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" />
-                            <span className="text-gray-700 text-sm">{risk}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    
-                    <div>
-                      <h4 className="font-semibold text-blue-600 mb-3">Monitorização:</h4>
-                      <ul className="space-y-2">
-                        {selectedWeek.monitoring.map((item, index) => (
-                          <li key={index} className="flex items-start space-x-2">
-                            <Stethoscope className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
-                            <span className="text-gray-700 text-sm">{item}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </>
-        )}
         
         <div className="mt-12 pt-8 border-t border-rosa-marfil-2">
           <p className="text-xs text-gray-500 italic text-center">
