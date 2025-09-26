@@ -50,13 +50,13 @@ const FinalConsiderations: React.FC = () => {
                 e de qualidade a essa população.
               </p>
             </div>
-            
           </div>
-          <div className="mt-12 pt-8 border-t border-rosa-marfil-2">
-          <p className="text-xs text-gray-500 italic text-center">
-            Fonte: <a href="https://bvsms.saude.gov.br/bvs/publicacoes/doenca_falciforme_atencao_integral_saude_mulher.pdf" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Ministério da Saúde. Doença Falciforme Atenção Integral à Saúde das Mulheres. Brasília: MS, 2015.</a>
-          </p>
-        </div>
+
+          <div className="mt-8 pt-6 border-t border-rosa-marfil-2">
+            <p className="text-xs text-gray-500 italic text-center">
+               Fonte: <a href="https://bvsms.saude.gov.br/bvs/publicacoes/doenca_falciforme_atencao_integral_saude_mulher.pdf" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Ministério da Saúde. Doença Falciforme Atenção Integral à Saúde das Mulheres. Brasília: MS, 2015.</a>
+            </p>
+          </div>
         </div>
       </div>
     </section>
