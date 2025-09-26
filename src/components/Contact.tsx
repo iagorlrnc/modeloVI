@@ -6,8 +6,7 @@ const Contact: React.FC = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'E-mail',
-      info: 'contato.tcc.enfermagem@unifesp.br',
-      description: 'Resposta em até 48 horas'
+      info: 'lais.dias@uft.edu.br',
     }
   ];
 
@@ -39,25 +38,11 @@ const Contact: React.FC = () => {
                       <div>
                         <h4 className="font-semibold text-text mb-1">{item.title}</h4>
                         <p className="text-accent font-medium mb-1">{item.info}</p>
-                        <p className="text-gray-600 text-sm">{item.description}</p>
                       </div>
                     </div>
                   </div>
                 ))}
               </div>
-            </div>
-
-            {/* Additional Info */}
-            <div className="bg-white p-6 rounded-xl border border-rosa-marfil-2">
-              <h4 className="font-semibold text-text mb-3">Sobre este Projeto</h4>
-              <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                Este trabalho de conclusão de curso é orientado pela Prof.ª Dra. Maria Silva Santos 
-                e desenvolvido como parte do programa de graduação em Enfermagem da UNIFESP.
-              </p>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Nosso objetivo é contribuir para a melhoria dos cuidados de enfermagem direcionados 
-                a pessoas com anemia falciforme, especialmente no âmbito reprodutivo.
-              </p>
             </div>
           </div>
         </div>
