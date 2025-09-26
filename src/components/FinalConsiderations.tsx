@@ -52,11 +52,6 @@ const FinalConsiderations: React.FC = () => {
             </div>
           </div>
           
-          <div className="mt-8 pt-6 border-t border-rosa-marfil-2">
-            <p className="text-xs text-gray-500 italic text-center">
-              Fonte: <a href="https://www.scielo.br/j/rbhh/a/sJyQdPWY5H9MXkVVvZXmXVn/?format=html&lang=pt" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Revista Brasileira de Hematologia e Hemoterapia. Assistência de Enfermagem na Doença Anemia Falciforme. São Paulo: RBHH, 2007.</a>
-            </p>
-          </div>
         </div>
       </div>
     </section>
