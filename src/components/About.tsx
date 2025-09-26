@@ -49,7 +49,7 @@ const About: React.FC = () => {
                   <GraduationCap className="w-6 h-6 text-accent" />
                   <h4 className="font-semibold text-text">Instituição</h4>
                 </div>
-                <p className="text-gray-600">Universidade Federal do Tocantins</p>
+                <p className="text-gray-600">Universidade Federal do Tocantins<br>Campus Palmas</p>
               </div>
             </div>
           </div>
