@@ -50,6 +50,7 @@ const FinalConsiderations: React.FC = () => {
                 e de qualidade a essa população.
               </p>
             </div>
+            
           </div>
           <div className="mt-12 pt-8 border-t border-rosa-marfil-2">
           <p className="text-xs text-gray-500 italic text-center">
