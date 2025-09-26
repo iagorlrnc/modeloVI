@@ -39,7 +39,7 @@ const About: React.FC = () => {
               <div className="bg-white p-6 rounded-xl border border-rosa-marfil-2 shadow-sm">
                 <div className="flex items-center space-x-3 mb-3">
                   <User className="w-6 h-6 text-accent" />
-                  <h4 className="font-semibold text-text">Aluna</h4>
+                  <h4 className="font-semibold text-text">Acadêmica</h4>
                 </div>
                 <p className="text-gray-600">Laís Pereira Dias</p>
               </div>
