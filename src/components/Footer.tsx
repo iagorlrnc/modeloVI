@@ -128,15 +128,18 @@ const Footer: React.FC = () => {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-gray-400 text-sm">
-            © {currentYear} Enfermagem - UFT. Todos os direitos reservados.
+            © {currentYear} Enfermagem - UFT.
+          </p>
+          <p className="text-gray-400 text-sm">
+            Todos os direitos reservados.
           </p>
           
           <div className="flex items-center space-x-4">
             <div className="text-gray-400 text-sm">
               Desenvolvido com
-            </div>
-            <Heart className="w-4 h-4 text-accent animate-pulse" />
-            <div className="text-gray-400 text-sm">
+            
+            <span><Heart className="w-4 h-4 text-accent animate-pulse" /></span>
+            
               para a comunidade acadêmica
             </div>
           </div>
