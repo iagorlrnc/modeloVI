@@ -18,11 +18,11 @@ const FinalConsiderations: React.FC = () => {
           <div className="bg-white p-8 rounded-2xl shadow-sm">
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
-                Este trabalho de conclusão de curso é orientado pela Prof.ª Dra. Maria Silva Santos 
-                e desenvolvido como parte do programa de graduação em Enfermagem da UNIFESP.
+                Este projeto foi elaborado pela acadêmica Laís Pereira Dias 
+                e desenvolvido como parte do curso de Bacharelado em Enfermagem da UFT.
               </p>
               <p>
-                Nosso objetivo é contribuir para a melhoria dos cuidados de enfermagem direcionados 
+                O objetivo é contribuir para a melhoria dos cuidados de enfermagem direcionados 
                 a pessoas com anemia falciforme, especialmente no âmbito reprodutivo.
               </p>
               <p>
