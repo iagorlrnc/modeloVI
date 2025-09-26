@@ -9,7 +9,7 @@ interface AccordionItem {
 }
 
 const SickleCellSection: React.FC = () => {
-  const [openAccordion, setOpenAccordion] = useState<string | null>('sinais');
+  const [openAccordion, setOpenAccordion] = useState<string | null>(null);
   const [hoveredStat, setHoveredStat] = useState<string | null>(null);
 
   const accordionData: AccordionItem[] = [
