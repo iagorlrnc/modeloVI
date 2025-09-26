@@ -156,7 +156,7 @@ const SickleCellSection: React.FC = () => {
           
           <div className="mt-8 pt-6 border-t border-rosa-marfil-2">
             <p className="text-xs text-gray-500 italic text-center">
-              Fonte: <a href="https://www.sbhh.org.br/diretrizes/doenca-falciforme" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Sociedade Brasileira de Hematologia e Hemoterapia. Diretrizes para Diagnóstico e Tratamento da Doença Falciforme. São Paulo: SBHH, 2018.</a>
+              Fonte: <a href="https://bvsms.saude.gov.br/bvs/publicacoes/anvisa/diagnostico.pdf" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Agência Nacional de Vigilância Sanitária. Manual de Diagnóstico e Tratamento de Doenças Falciformes. Brasília: ANVISA, 2002.</a>
             </p>
           </div>
         </div>
