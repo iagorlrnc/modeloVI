@@ -220,7 +220,7 @@ const Recommendations: React.FC = () => {
         
         <div className="pt-8 border-t border-rosa-marfil-2">
           <p className="text-xs text-gray-500 italic text-center">
-            Fonte: <a href="https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2017/01/management-of-sickle-cell-disease-in-pregnancy" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">American College of Obstetricians and Gynecologists. Management of Sickle Cell Disease in Pregnancy. Practice Bulletin No. 78. Washington: ACOG, 2017.</a>
+            Fonte: <a href="https://www.nupad.medicina.ufmg.br/wp-content/uploads/2016/12/manual_gestante.pdf" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Ministério da Saúde. Manual de Acompanhamento de Gestante com Doença Falciforme. Belo Horizonte: MS/NUPAD/FM/UFMG, 2009.</a>
           </p>
         </div>
       </div>
