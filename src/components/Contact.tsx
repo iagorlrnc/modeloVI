@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
           {/* Contact Info */}
           <div className="space-y-8 mb-12">
             <div>
-              <h3 className="text-2xl font-bold text-text mb-6">Informações de Contato</h3>
+              <h3 className="text-2xl font-bold text-text mb-6">Contato</h3>
               <div className="space-y-6">
                 {contactInfo.map((item, index) => (
                   <div key={index} className="bg-white p-6 rounded-xl border border-rosa-marfil-2 hover:shadow-md transition-shadow duration-200">
