@@ -17,7 +17,15 @@ const FinalConsiderations: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <div className="bg-white p-8 rounded-2xl shadow-sm">
             <div className="space-y-6 text-gray-700 leading-relaxed">
-              <p className="text-lg">
+              <p>
+                Este trabalho de conclusão de curso é orientado pela Prof.ª Dra. Maria Silva Santos 
+                e desenvolvido como parte do programa de graduação em Enfermagem da UNIFESP.
+              </p>
+              <p>
+                Nosso objetivo é contribuir para a melhoria dos cuidados de enfermagem direcionados 
+                a pessoas com anemia falciforme, especialmente no âmbito reprodutivo.
+              </p>
+              <p>
                 O planejamento reprodutivo para pessoas com anemia falciforme requer uma abordagem 
                 multidisciplinar e individualizada, considerando a gravidade da doença, o histórico 
                 de complicações e as preferências pessoais de cada paciente.
@@ -45,7 +53,7 @@ const FinalConsiderations: React.FC = () => {
           
           <div className="mt-8 pt-6 border-t border-rosa-marfil-2">
             <p className="text-xs text-gray-500 italic text-center">
-              Fonte: <a href="https://www.scielo.br/j/rbhh/a/3K5mN8pQ7wR2xL9vF4jH6tB/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Revista Brasileira de Hematologia e Hemoterapia. Cuidados de Enfermagem em Anemia Falciforme. São Paulo: RBHH, 2020.</a>
+              Fonte: <a href="https://bvsms.saude.gov.br/bvs/publicacoes/doenca_falciforme_atencao_integral_saude_mulher.pdf" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Ministério da Saúde. Doença Falciforme Atenção Integral à Saúde das Mulheres. Brasília: MS, 2015.</a>
             </p>
           </div>
         </div>
