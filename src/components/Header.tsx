@@ -58,12 +58,12 @@ const Header: React.FC = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex space-x-1">
+          <nav className="hidden xl:flex space-x-1">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                className={`px-3 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
                   activeSection === item.id
                     ? 'bg-accent text-white shadow-sm'
                     : 'text-gray-700 hover:bg-rosa-marfil-1 hover:text-text'
@@ -77,7 +77,7 @@ const Header: React.FC = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 rounded-lg hover:bg-rosa-marfil-1 transition-colors duration-200"
+            className="xl:hidden p-2 rounded-lg hover:bg-rosa-marfil-1 transition-colors duration-200"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -85,7 +85,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden absolute top-16 left-0 right-0 bg-white border-b border-rosa-marfil-2 shadow-lg">
+          <div className="xl:hidden absolute top-16 left-0 right-0 bg-white border-b border-rosa-marfil-2 shadow-lg">
             <nav className="px-4 py-2 space-y-1">
               {navItems.map((item) => (
                 <button
