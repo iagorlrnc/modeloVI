@@ -126,10 +126,10 @@ const SickleCellSection: React.FC = () => {
           <div className="space-y-4">
             {accordionData.map((item) => (
               <div key={item.id} className="bg-white rounded-xl shadow-sm overflow-hidden">
-                <button
+                {/* <button
                   onClick={() => setOpenAccordion(openAccordion === item.id ? null : item.id)}
                   className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
-                >
+                > */}
                   <div className="flex items-center space-x-3">
                     <div className="text-accent">{item.icon}</div>
                     <h3 className="font-semibold text-text">{item.title}</h3>
