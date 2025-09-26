@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
                 href="mailto:contato.tcc.enfermagem@unifesp.br"
                 className="text-sm text-gray-300 hover:text-accent transition-colors duration-200"
               >
-                contato.tcc.enfermagem@unifesp.br
+                lais.dias@uft.edu.br
               </a>
             </div>
           </div>
@@ -82,16 +82,16 @@ const Footer: React.FC = () => {
             <h4 className="font-semibold text-white mb-6">Informações Acadêmicas</h4>
             <div className="space-y-4">
               <div>
-                <h5 className="text-sm font-medium text-accent mb-1">Orientadora</h5>
-                <p className="text-gray-300 text-sm">Prof.ª Dra. Maria Silva Santos</p>
+                <h5 className="text-sm font-medium text-accent mb-1">Aluna</h5>
+                <p className="text-gray-300 text-sm">Laís Pereira Dias</p>
               </div>
               <div>
                 <h5 className="text-sm font-medium text-accent mb-1">Instituição</h5>
-                <p className="text-gray-300 text-sm">Universidade Federal de São Paulo</p>
+                <p className="text-gray-300 text-sm">Universidade Federal do Tocantins - Campus Palmas</p>
               </div>
               <div>
                 <h5 className="text-sm font-medium text-accent mb-1">Curso</h5>
-                <p className="text-gray-300 text-sm">Graduação em Enfermagem</p>
+                <p className="text-gray-300 text-sm">Bacharelado em Enfermagem</p>
               </div>
             </div>
           </div>
@@ -128,7 +128,7 @@ const Footer: React.FC = () => {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-gray-400 text-sm">
-            © {currentYear} TCC Enfermagem - UNIFESP. Todos os direitos reservados.
+            © {currentYear} Enfermagem - UFT. Todos os direitos reservados.
           </p>
           
           <div className="flex items-center space-x-4">
