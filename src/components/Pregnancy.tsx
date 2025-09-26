@@ -214,7 +214,7 @@ const Pregnancy: React.FC = () => {
             <h3 className="text-2xl font-bold text-blue-900">Recomendações Essenciais</h3>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid lg:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-xl">
               <h4 className="font-semibold text-blue-900 mb-3">Acompanhamento</h4>
               <ul className="text-sm text-gray-700 space-y-2">
