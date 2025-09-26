@@ -137,9 +137,9 @@ const Footer: React.FC = () => {
           <div className="flex items-center space-x-4">
             <div className="text-gray-400 text-sm">
               Desenvolvido com
-            
-            <span><Heart className="w-4 h-4 text-accent animate-pulse" /></span>
-            
+            </div>
+            <Heart className="w-4 h-4 text-accent animate-pulse" />
+            <div className="text-gray-400 text-sm">
               para a comunidade acadêmica
             </div>
           </div>
