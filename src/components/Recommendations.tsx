@@ -132,7 +132,7 @@ const Recommendations: React.FC = () => {
             <div className="bg-white p-1 rounded-xl shadow-sm">
               <button
                 onClick={() => setActiveTab('professionals')}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center space-x-2 ${
+                className={`w-full px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center space-x-2 ${
                   activeTab === 'professionals'
                     ? 'bg-accent text-white shadow-sm'
                     : 'text-gray-700 hover:bg-gray-50'
@@ -143,7 +143,7 @@ const Recommendations: React.FC = () => {
               </button>
               <button
                 onClick={() => setActiveTab('patients')}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center space-x-2 ${
+                className={`w-full px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center space-x-2 ${
                   activeTab === 'patients'
                     ? 'bg-accent text-white shadow-sm'
                     : 'text-gray-700 hover:bg-gray-50'
