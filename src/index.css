@@ -74,16 +74,6 @@ section.animate-fade-in {
   transform: translateY(0);
 }
 
-/* Focus styles for accessibility */
-button:focus,
-a:focus,
-input:focus,
-textarea:focus,
-select:focus {
-  outline: 2px solid #EAAFC0;
-  outline-offset: 2px;
-}
-
 /* Smooth hover transitions */
 button,
 a {
