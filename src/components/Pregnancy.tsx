@@ -303,7 +303,7 @@ const Pregnancy: React.FC = () => {
         
         <div className="mt-12 pt-8 border-t border-rosa-marfil-2">
           <p className="text-xs text-gray-500 italic text-center">
-            Fonte: <a href="https://bvsms.saude.gov.br/bvs/publicacoes/cadernos_atencao_basica_32_prenatal.pdf" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Ministério da Saúde. Atenção ao Pré-natal de Baixo Risco. Cadernos de Atenção Básica, nº 32. Brasília: MS, 2012.</a>
+            Fonte: <a href="https://www.nupad.medicina.ufmg.br/wp-content/uploads/2016/12/manual_gestante.pdf" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Universidade Federal de Minas Gerais, Faculdade de Medicina, Núcleo de Ações e Pesquisa em Apoio Diagnóstico. Manual de Acompanhamento da Gestante com Doença Falciforme. Belo Horizonte: NUPAD/FM/UFMG, 2009.</a>
           </p>
         </div>
       </div>
