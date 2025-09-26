@@ -129,7 +129,7 @@ const SickleCellSection: React.FC = () => {
                 {/* <button
                   onClick={() => setOpenAccordion(openAccordion === item.id ? null : item.id)}
                   className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
-                > */}
+                >
                   <div className="flex items-center space-x-3">
                     <div className="text-accent">{item.icon}</div>
                     <h3 className="font-semibold text-text">{item.title}</h3>
@@ -141,7 +141,7 @@ const SickleCellSection: React.FC = () => {
                       <ChevronRight className="w-5 h-5" />
                     )}
                   </div>
-                </button>
+                </button> */}
                 
                 {openAccordion === item.id && (
                   <div className="px-6 pb-4">
