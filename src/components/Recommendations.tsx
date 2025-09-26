@@ -218,10 +218,10 @@ const Recommendations: React.FC = () => {
           </div>
         </div>
         
-        <div className="pt-8 border-t border-rosa-marfil-2">
-          <p className="text-xs text-gray-500 italic text-center">
-            Fonte: <a href="https://www.nupad.medicina.ufmg.br/wp-content/uploads/2016/12/manual_gestante.pdf" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Ministério da Saúde. Manual de Acompanhamento de Gestante com Doença Falciforme. Belo Horizonte: MS/NUPAD/FM/UFMG, 2009.</a>
-          </p>
+        <div className="mt-8 pt-6 border-t border-rosa-marfil-2">
+            <p className="text-xs text-gray-500 italic text-center">
+              Fonte: <a href="https://bvsms.saude.gov.br/bvs/publicacoes/doenca_falciforme_atencao_integral_saude_mulher.pdf" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Ministério da Saúde. Doença Falciforme Atenção Integral à Saúde das Mulheres. Brasília: MS, 2015.</a>
+            </p>
         </div>
       </div>
     </section>
