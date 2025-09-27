@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
             <h4 className="font-semibold text-white mb-6">Informações Acadêmicas</h4>
             <div className="space-y-4">
               <div>
-                <h5 className="text-sm font-medium text-accent mb-1">Aluna</h5>
+                <h5 className="text-sm font-medium text-accent mb-1">Acadêmica</h5>
                 <p className="text-gray-300 text-sm">Laís Pereira Dias</p>
               </div>
               <div>
